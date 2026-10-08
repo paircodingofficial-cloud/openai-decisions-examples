@@ -1,0 +1,8 @@
+openai>=3.26.0,<4
+gymnasium[toy-text]==1.4.0
+ale-py>=0.11,<0.12
+python-dotenv>=1,<2
+Pillow>=10,<13
+pandas>=2,<3
+ipykernel>=6,<8
+jupyterlab>=4,<5

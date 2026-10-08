@@ -1,0 +1,22 @@
+[project]
+name = "openai-decisions-appendix"
+version = "0.1.0"
+description = "이미지 연령대 추정과 Taxi·Breakout 자동 플레이 실습"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    # Decisions API가 포함된 공식 SDK
+    "openai>=3.26.0,<4",
+    "python-dotenv>=1,<2",
+    # 사진 처리와 결과표
+    "pillow>=10,<13",
+    "pandas>=2,<3",
+    # 교안에서 설명하는 Taxi 화면과 동작을 유지
+    "gymnasium[toy-text]==1.4.0",
+    "ale-py>=0.11,<0.12",  # Atari Breakout 환경과 게임 자산
+    # 노트북 실행 및 커널
+    "jupyterlab>=4,<5",
+    "ipykernel>=6,<8",
+]
+
+[tool.uv]
+package = false
